@@ -8,8 +8,8 @@ const formSchema = yup.object().shape({
     size: yup
       .string()
       .required('Must have a pizza size'),
-    pepperoni: yup.boolean()
-    .oneOf([true], "please agree to terms of use"),
+    pepperoni: yup.boolean(),
+    // .oneOf([true], "please agree to terms of use"),
     bacon: yup.boolean(),
     // .oneOf([true], "please agree to terms of use"),
     sausage: yup.boolean(),
@@ -184,7 +184,7 @@ const formSchema = yup.object().shape({
         
         
         
-        <button disabled={buttonDisabled}>Order Now </button>
+        <button disabled={buttonDisabled}>Add To Order </button>
 
         <pre>{JSON.stringify(post, null, 3)}</pre>
       </form>
